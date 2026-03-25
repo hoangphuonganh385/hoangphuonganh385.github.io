@@ -34,7 +34,6 @@ body {
   padding: 15px;
   text-align: center;
   z-index: 1000;
-  font-weight: 500;
 }
 
 /* HERO */
@@ -95,6 +94,35 @@ h2 {
   width: 250px;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* SKILLS */
+.skills {
+  max-width: 600px;
+  margin: auto;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill p {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.skill-bar {
+  width: 100%;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 10px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  width: 0;
+  transition: 2s;
 }
 
 /* PROJECT */
@@ -197,12 +225,43 @@ footer {
   <div class="about">
     <img src="assets/profile.jpg">
     <div>
-      <p>
-        I am a curious and growth-oriented individual who enjoys exploring new ideas and challenging myself beyond my comfort zone.
-      </p>
-      <p>
-        I strive to improve myself every day through learning and experience.
-      </p>
+      <p>I am a curious and growth-oriented individual who enjoys exploring new ideas.</p>
+      <p>I strive to improve myself every day through learning and experience.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section fade">
+  <h2>Skills</h2>
+
+  <div class="skills">
+    <div class="skill">
+      <p>Communication</p>
+      <div class="skill-bar">
+        <div class="skill-fill" data-width="90%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>Teamwork</p>
+      <div class="skill-bar">
+        <div class="skill-fill" data-width="85%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>English</p>
+      <div class="skill-bar">
+        <div class="skill-fill" data-width="80%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>Problem Solving</p>
+      <div class="skill-bar">
+        <div class="skill-fill" data-width="75%"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -261,14 +320,24 @@ footer {
 
 <script>
 const faders = document.querySelectorAll('.fade');
+const skills = document.querySelectorAll('.skill-fill');
 
 window.addEventListener('scroll', () => {
+
   faders.forEach(el => {
     const rect = el.getBoundingClientRect();
     if (rect.top < window.innerHeight - 100) {
       el.classList.add('show');
     }
   });
+
+  skills.forEach(bar => {
+    const rect = bar.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      bar.style.width = bar.getAttribute("data-width");
+    }
+  });
+
 });
 </script>
 
