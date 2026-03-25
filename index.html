@@ -82,15 +82,24 @@ h2 {
 /* ABOUT */
 .about {
   display: flex;
-  gap: 40px;
+  justify-content: center; /* căn giữa */
   align-items: center;
+  gap: 50px;
   flex-wrap: wrap;
 }
 
 .about img {
   width: 250px;
-  border-radius: 15px;
+  height: 250px;
+  object-fit: cover; /* ảnh không bị méo */
+  border-radius: 50%; /* bo tròn avatar */
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  flex-shrink: 0;
+}
+
+.about div {
+  max-width: 600px;
+  text-align: justify;
 }
 
 /* SKILLS */
@@ -210,7 +219,7 @@ footer {
 <section id="about" class="section fade">
   <h2>About Me</h2>
   <div class="about">
-    <img "profile.jpg">
+    <img src="profile.jpg" alt="Profile">
     <div>
       <p>
   I am a second-year student majoring in International Economics, with a strong curiosity about the world and how things work beyond the classroom. 
