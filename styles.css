@@ -1,17 +1,18 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+@import "./sass/vendors/bootstrap.scss";
 
-.container {
-  padding: 20px;
-}
+@import "./sass/abstracts/mixins";
+@import "./sass/abstracts/variables";
+@import "./sass/abstracts/helpers";
 
-.section-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
+@import "./sass/base/base";
+@import "./sass/base/typography";
 
-img {
-  max-width: 100%;
-}
+@import "./sass/components/buttons";
+
+@import "./sass/layout/footer";
+@import "./sass/layout/sections";
+
+@import "./sass/sections/about";
+@import "./sass/sections/contact";
+@import "./sass/sections/hero";
+@import "./sass/sections/projects";
