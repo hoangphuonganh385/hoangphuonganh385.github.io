@@ -10,7 +10,205 @@
       margin: 0;
       font-family: Arial, sans-serif;
       color: #333;
+    }<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hoàng Thị Phương Anh | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
+
+    body {
+      color: #333;
+      background: #f8f9fc;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero span {
+      color: #ffd369;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: white;
+      color: #667eea;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffd369;
+      color: black;
+    }
+
+    /* SECTION */
+    .section {
+      padding: 80px 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    /* ABOUT */
+    .about {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .about img {
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    /* PROJECT */
+    .projects {
+      display: grid;
+      gap: 30px;
+    }
+
+    .project {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>
+      Hi, I'm <span>Hoàng Thị Phương Anh</span><br>
+      International Economics Student
+    </h1>
+    <a href="#about" class="btn">Explore</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section container">
+  <h2>About Me</h2>
+  <div class="about">
+    <img src="assets/profile.jpg" alt="">
+    <div>
+      <p>
+        I am a curious and growth-oriented individual who enjoys exploring new ideas and challenging myself beyond my comfort zone.
+      </p>
+      <p>
+        I believe in continuous self-improvement and strive to become better every day through learning and experience.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section container">
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+    <div class="project">
+      <h3>Market Research Project</h3>
+      <p>Researching consumer behavior and analyzing market trends.</p>
+      <img src="assets/project.jpg">
+    </div>
+
+    <div class="project">
+      <h3>International Trade Analysis</h3>
+      <p>Exploring global trade and economic factors.</p>
+      <img src="assets/project.jpg">
+    </div>
+
+    <div class="project">
+      <h3>Business Case Study</h3>
+      <p>Teamwork project solving real business problems.</p>
+      <img src="assets/project.jpg">
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact">
+  <h2>Contact</h2>
+  <p>Feel free to reach out to me</p>
+  <a class="btn" href="mailto:hoangphuonganh385@gmail.com">Email me</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 - Hoàng Thị Phương Anh
+</footer>
+
+</body>
+</html>
 
     .container {
       width: 90%;
