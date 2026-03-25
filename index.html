@@ -19,9 +19,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* BODY */
 body {
   background: #eaf6f6;
   color: #333;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 /* NAVBAR */
@@ -74,15 +77,15 @@ body {
   padding: 80px 10%;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; margin-bottom: 40px; }
+h3 { font-size: 1.25rem; }
+p { font-size: 1rem; }
 
 /* ABOUT */
 .about {
   display: flex;
-  justify-content: center; /* căn giữa */
+  justify-content: center;
   align-items: center;
   gap: 50px;
   flex-wrap: wrap;
@@ -91,8 +94,8 @@ h2 {
 .about img {
   width: 250px;
   height: 250px;
-  object-fit: cover; /* ảnh không bị méo */
-  border-radius: 50%; /* bo tròn avatar */
+  object-fit: cover;
+  border-radius: 50%;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   flex-shrink: 0;
 }
@@ -132,7 +135,7 @@ h2 {
   transition: 2s;
 }
 
-/* PROJECT */
+/* PROJECTS */
 .projects {
   display: grid;
   gap: 25px;
@@ -195,14 +198,21 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.1rem; }
+  p { font-size: 0.95rem; }
+}
 </style>
 </head>
 
 <body>
 
-<div class="navbar">
-  Hoàng Thị Phương Anh
-</div>
+<!-- NAVBAR -->
+<div class="navbar">Hoàng Thị Phương Anh</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -219,26 +229,14 @@ footer {
 <section id="about" class="section fade">
   <h2>About Me</h2>
   <div class="about">
-    <img "profile.jpg" alt="Profile">
+    <img src="profile.jpg" alt="Profile">
     <div>
       <p>
-  My name is Hoàng Thị Phương Anh. I am a second-year student at Foreign Trade University majoring in International Economics, with a strong curiosity about the world and how things work beyond the classroom. 
-  I enjoy exploring new ideas and continuously learning, not only through academic knowledge but also through real-life experiences.
+        I'm Hoàng Thị Phương Anh, a second-year International Economics student at Foreign Trade University. 
+        I enjoy learning, exploring new ideas, and taking on challenges to grow academically and personally.
       </p>
-
       <p>
-  I am someone who is willing to step out of my comfort zone and take on new challenges. 
-  Whether it is participating in group projects, presenting ideas, or learning new skills, I always try to approach things with a positive and proactive mindset.
-      </p>
-
-      <p>
-  I am particularly interested in developing myself in terms of communication, teamwork, and problem-solving skills. 
-  I believe these are essential qualities that will help me grow both academically and professionally in the future.
-      </p>
-
-      <p>
-  I am also passionate about self-improvement and personal growth. 
-  Outside of studying, I enjoy connecting with people, learning from different perspectives, and becoming a better version of myself step by step.
+        I'm passionate about developing communication, teamwork, and problem-solving skills, while continuously improving myself.
       </p>
     </div>
   </div>
@@ -247,34 +245,22 @@ footer {
 <!-- SKILLS -->
 <section class="section fade">
   <h2>Skills</h2>
-
   <div class="skills">
     <div class="skill">
       <p>Communication</p>
-      <div class="skill-bar">
-        <div class="skill-fill" data-width="90%"></div>
-      </div>
+      <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
     </div>
-
     <div class="skill">
       <p>Teamwork</p>
-      <div class="skill-bar">
-        <div class="skill-fill" data-width="85%"></div>
-      </div>
+      <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
     </div>
-
     <div class="skill">
       <p>English</p>
-      <div class="skill-bar">
-        <div class="skill-fill" data-width="70%"></div>
-      </div>
+      <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
     </div>
-
     <div class="skill">
       <p>Problem Solving</p>
-      <div class="skill-bar">
-        <div class="skill-fill" data-width="80%"></div>
-      </div>
+      <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
     </div>
   </div>
 </section>
@@ -282,49 +268,20 @@ footer {
 <!-- PROJECTS -->
 <section class="section fade">
   <h2>Projects</h2>
-
   <div class="projects">
     <div class="project">
-      <h3>Market Research Project</h3>
-      <p>
-        In this project, I conducted research on consumer behavior in a specific market segment. 
-        The main objective was to understand customer preferences, purchasing habits, and factors influencing buying decisions.
-      </p>
-      <p>
-        I collected data through surveys and secondary sources, then analyzed the results using basic statistical methods. 
-        This project helped me improve my analytical thinking, data interpretation skills, and ability to present insights clearly.
-      </p>
-      <p>
-        Through this experience, I gained a deeper understanding of how market research supports business strategies and decision-making.
-      </p>
+      <h3>Market Research</h3>
+      <p>Analyzed consumer behavior in a market segment using surveys and data analysis, improving my analytical and presentation skills.</p>
     </div>
 
     <div class="project">
       <h3>International Trade Analysis</h3>
-      <p>
-        This project focused on analyzing global trade patterns and the economic relationships between countries. 
-        I explored key concepts such as comparative advantage, trade policies, and the impact of globalization.
-      </p>
-      <p>
-        By examining real-world data and case studies, I was able to identify trends in imports and exports, as well as evaluate how external factors like exchange rates and political policies affect international trade.
-      </p>
-      <p>
-        The project strengthened my critical thinking and broadened my perspective on how economies interact on a global scale.
-      </p>
+      <p>Studied global trade patterns, comparative advantage, and policy impacts, enhancing my critical thinking on international economics.</p>
     </div>
 
     <div class="project">
       <h3>Business Case Study</h3>
-      <p>
-        In this team-based project, we analyzed a real business scenario and proposed practical solutions to existing problems. 
-        My role involved researching information, contributing ideas, and collaborating with teammates to build a complete strategy.
-      </p>
-      <p>
-        We evaluated different approaches, discussed potential risks, and presented our final recommendations in a structured presentation.
-      </p>
-      <p>
-        This experience enhanced my teamwork, communication, and problem-solving skills, while also helping me understand how theoretical knowledge can be applied in real business situations.
-      </p>
+      <p>Worked in a team to analyze a real business scenario and propose solutions, strengthening my teamwork and problem-solving abilities.</p>
     </div>
   </div>
 </section>
@@ -333,15 +290,11 @@ footer {
 <section class="section contact fade">
   <h2>Contact</h2>
   <p>You can reach me via email or social platforms</p>
-
   <a class="btn" href="mailto:hoangphuonganh385@gmail.com">
     <i class="fas fa-envelope"></i> hoangphuonganh385@gmail.com
   </a>
-
   <div class="icons">
-    <a href="mailto:hoangphuonganh385@gmail.com">
-      <i class="fas fa-envelope"></i>
-    </a>
+    <a href="mailto:hoangphuonganh385@gmail.com"><i class="fas fa-envelope"></i></a>
     <a href="#"><i class="fab fa-facebook"></i></a>
     <a href="#"><i class="fab fa-linkedin"></i></a>
     <a href="#"><i class="fab fa-github"></i></a>
@@ -349,30 +302,23 @@ footer {
 </section>
 
 <!-- FOOTER -->
-<footer>
-  © 2026 - Hoàng Thị Phương Anh
-</footer>
+<footer>© 2026 - Hoàng Thị Phương Anh</footer>
 
+<!-- SCRIPT -->
 <script>
 const faders = document.querySelectorAll('.fade');
 const skills = document.querySelectorAll('.skill-fill');
 
 window.addEventListener('scroll', () => {
-
   faders.forEach(el => {
     const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      el.classList.add('show');
-    }
+    if (rect.top < window.innerHeight - 100) el.classList.add('show');
   });
 
   skills.forEach(bar => {
     const rect = bar.getBoundingClientRect();
-    if (rect.top < window.innerHeight) {
-      bar.style.width = bar.getAttribute("data-width");
-    }
+    if (rect.top < window.innerHeight) bar.style.width = bar.getAttribute("data-width");
   });
-
 });
 </script>
 
